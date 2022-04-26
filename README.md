@@ -1,11 +1,14 @@
 Expansion based on [vite-plugin-vue-setup-extend](https://github.com/vbenjs/vite-plugin-vue-setup-extend)
 
-[PR](https://github.com/vbenjs/vite-plugin-vue-setup-extend/pull/8)
-
-# vite-plugin-vue-setup-name-support
+# vite-plugin-vue-setup-extend-plus
 
 Make the vue script setup syntax support the name attribute
 
+## Feature 
+
+- support name
+- support inheritAttrs
+- precise breakpoints
 ## Install (yarn or npm)
 
 **node version:** >=12.0.0
