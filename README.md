@@ -4,6 +4,13 @@ Expansion based on [vite-plugin-vue-setup-extend](https://github.com/vbenjs/vite
 
 Make the vue script setup syntax support the name attribute
 
+## Iterative updates are made in [unplugin-vue-setup-extend-plus](https://www.npmjs.com/package/unplugin-vue-setup-extend-plus) during the later period.
+
+## CHANGELOG
+
+### [0.1.0]
+
+- Automatically convert based on name and inheritAttrs
 ## Feature 
 
 - support name
