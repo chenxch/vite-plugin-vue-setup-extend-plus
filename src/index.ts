@@ -1,15 +1,7 @@
 import type { Plugin } from 'vite'
 import { supportScriptName } from './lib'
 
-export interface ExtendOptions {
-  /**
-   * Turn on name extension
-   * @default true
-   */
-  name?: boolean
-}
-
-export default (options: ExtendOptions = {}): Plugin => {
+export default (): Plugin => {
   return {
     name: 'vite:setup-name-support',
     enforce: 'pre',
@@ -17,11 +9,8 @@ export default (options: ExtendOptions = {}): Plugin => {
       if (!/\.vue$/.test(id)) {
         return null
       }
-      const { name = true } = options
-      if (name) {
-        return supportScriptName.call(this, code, id)
-      }
-      return null
+
+      return supportScriptName.call(this, code, id)
     },
   }
 }
